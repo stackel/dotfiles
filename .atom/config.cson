@@ -1,0 +1,46 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "24802808-fc00-4af1-ae13-7fc8ec6398df"
+    html:
+      beautify_on_save: true
+    js:
+      disabled: true
+  "autocomplete-modules":
+    babelPluginModuleResolver: true
+  core:
+    telemetryConsent: "limited"
+    themes: [
+      "one-light-ui"
+      "solarized-light-syntax"
+    ]
+    titleBar: "custom"
+  editor:
+    fontSize: 18
+  "exception-reporting":
+    userId: "0fb58390-7580-4327-93f5-07600602ec60"
+  "gruvbox-plus-syntax":
+    contrast: "Hard"
+  "linter-eslint":
+    autofix:
+      fixOnSave: true
+    global: {}
+  "linter-ui-default": {}
+  "platformio-ide-terminal":
+    style:
+      defaultPanelHeight: "150px"
+  "theme-switch":
+    darkProfiles: [
+      "one-dark-ui rocket-dark-syntax"
+    ]
+    lightProfiles: [
+      "one-light-ui solarized-light-syntax"
+    ]
+    profiles: [
+      "one-dark-ui rocket-dark-syntax"
+      "one-light-ui solarized-light-syntax"
+    ]
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false

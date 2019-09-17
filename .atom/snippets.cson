@@ -1,0 +1,73 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+'.source.js':
+  'React ES7 Functional Component':
+    'prefix': 'rfunc'
+    'body': """
+      import React from 'react';
+      import PropTypes from 'prop-types';
+
+      export default function ${1}(${3:props}) {
+        return (
+          ${4:<div>MyComponent</div>}
+        );
+      }
+
+      ${1}.propTypes = {
+        ${2}
+      };
+    """
+
+  'React static defaultProps = { ... } (ES7)':
+    'prefix': 'dp'
+    'body': """
+      static defaultProps = {
+        ${1}
+      };
+    """
+
+  'React static propTypes = { ... } (ES7)':
+    'prefix': 'pt'
+    'body': """
+      static propTypes = {
+        ${1}: PropTypes.${2:string},
+      };
+    """
+
+  'React Storybook Skeleton':
+    'prefix': 'rsb'
+    'body': """
+      /* eslint-disable import/no-extraneous-dependencies */
+      import React from 'react';
+      import { action } from '@storybook/addon-actions';
+      import { storiesOf } from '@storybook/react';
+      import { text, number } from '@storybook/addon-knobs';
+
+      import ${1:MyComponent} from './${1:MyComponent}';
+
+      storiesOf('', module)
+        .add('${1:MyComponent}', () => (
+          <${1:MyComponent}
+          />
+        ));
+    """
