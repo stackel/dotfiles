@@ -32,13 +32,13 @@
       defaultPanelHeight: "150px"
   "theme-switch":
     darkProfiles: [
-      "one-dark-ui rocket-dark-syntax"
+      "one-dark-ui gruvbox"
     ]
     lightProfiles: [
       "one-light-ui solarized-light-syntax"
     ]
     profiles: [
-      "one-dark-ui rocket-dark-syntax"
+      "one-dark-ui gruvbox"
       "one-light-ui solarized-light-syntax"
     ]
   "tree-view":
