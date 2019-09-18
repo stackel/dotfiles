@@ -11,12 +11,12 @@
   core:
     telemetryConsent: "limited"
     themes: [
-      "one-light-ui"
-      "solarized-light-syntax"
+      "one-dark-ui"
+      "gruvbox"
     ]
     titleBar: "custom"
   editor:
-    fontSize: 18
+    fontSize: 17
   "exception-reporting":
     userId: "0fb58390-7580-4327-93f5-07600602ec60"
   "gruvbox-plus-syntax":
@@ -25,7 +25,8 @@
     autofix:
       fixOnSave: true
     global: {}
-  "linter-ui-default": {}
+  "linter-ui-default":
+    showPanel: true
   "platformio-ide-terminal":
     style:
       defaultPanelHeight: "150px"
